@@ -7,7 +7,6 @@ import "./style.css";
 const Main = styled.main`
   display: flex;
   align-items: center;
-  padding: 0 4rem;
   min-height: 100vh;
   justify-content: space-around;
 `;

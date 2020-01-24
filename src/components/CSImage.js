@@ -5,6 +5,7 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 50%;
 `;
 
 const Banner = styled.svg`

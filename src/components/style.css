@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro|ZCOOL+QingKe+HuangYou&display=swap");
 
 body {
+  margin: 0;
   font-family: "Source Sans Pro", sans-serif;
 }
 
