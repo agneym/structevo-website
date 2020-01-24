@@ -24,7 +24,7 @@ const Banner = styled.svg`
 `;
 
 const Heading = styled.h1`
-  font-size: 3rem;
+  font-size: 2rem;
 `;
 
 function CSImage() {
@@ -545,7 +545,7 @@ function CSImage() {
           </g>
         </g>
       </Banner>
-      <Heading>UNDER CONSTRUCTION</Heading>
+      <Heading>Under Construction...</Heading>
     </Container>
   );
 }
