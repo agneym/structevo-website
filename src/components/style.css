@@ -1,0 +1,170 @@
+.st0 {
+  fill: #2fbdf4;
+}
+.st1 {
+  fill: #0099cc;
+}
+.st2 {
+  fill: #2d2d2d;
+}
+.st3 {
+  display: none;
+  enable-background: new;
+}
+.st4 {
+  display: inline;
+  fill: #2fbdf4;
+}
+.st5 {
+  fill: #ff3366;
+}
+.st6 {
+  fill: #23a4cc;
+}
+.st7 {
+  opacity: 4e-2;
+}
+.st8 {
+  fill: #d8d8d8;
+}
+.st9 {
+  fill: #f43a16;
+}
+.st10 {
+  fill: #c4c4c6;
+}
+.st11 {
+  fill: #ffffff;
+}
+.st12 {
+  fill: #bababa;
+}
+.st13 {
+  display: none;
+  fill: #f43a16;
+}
+.st14 {
+  display: none;
+  fill: #f3ad7c;
+}
+.st15 {
+  display: none;
+  fill: #c78143;
+}
+.st16 {
+  display: none;
+  fill: #af5435;
+}
+.st17 {
+  fill: #f2be19;
+}
+.st18 {
+  fill: #d62209;
+}
+.st19 {
+  fill: #d3a31c;
+}
+.st20 {
+  fill: none;
+  stroke: #ce9e15;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+}
+.st21 {
+  fill: none;
+  stroke: #f2be19;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+}
+.st22 {
+  fill: #5b5b5b;
+}
+.st23 {
+  fill: #848484;
+}
+.st24 {
+  fill: #ce9e15;
+}
+.st25 {
+  fill: #fcc62b;
+}
+.st26 {
+  opacity: 0.23;
+  fill: #686868;
+}
+.st27 {
+  fill: #636363;
+}
+.st28 {
+  fill: #5ad8ff;
+}
+.st29 {
+  fill: #686868;
+}
+.st30 {
+  fill: none;
+  stroke: #848484;
+  stroke-miterlimit: 10;
+}
+.st31 {
+  fill: none;
+  stroke: #848484;
+  stroke-width: 10;
+  stroke-miterlimit: 10;
+}
+.st32 {
+  fill: #99e7ff;
+}
+.st33 {
+  fill: #7f5926;
+}
+.st34 {
+  fill: #996b34;
+}
+
+#ConeLight {
+  fill: orange !important;
+  animation: 0.6s infinite coneCycle;
+}
+
+@keyframes coneCycle {
+  50% {
+    fill: white;
+  }
+  100% {
+    fill: #d62209;
+  }
+}
+#CraneLight {
+  fill: white;
+  animation: 0.6s infinite coneCycle;
+}
+
+#Winch {
+  transform: translateX(88px);
+  animation: 4s linear infinite winchCycle;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes winchCycle {
+  0% {
+    transform: translateX(88px);
+  }
+  100% {
+    transform: translateX(4px);
+  }
+}
+#PaintRoller {
+  animation: 0.7s ease infinite paintRoller;
+  transform: translateY(-1px);
+  animation-direction: alternate-reverse;
+}
+
+@keyframes paintRoller {
+  0% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(21px);
+  }
+}
