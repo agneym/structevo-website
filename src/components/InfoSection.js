@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Facebook, Youtube } from "react-feather";
 
 import logo from "../images/logo.png";
+import media from "./media";
 
 const Logo = styled.img`
   height: 18rem;
@@ -21,6 +22,11 @@ const Section = styled.section`
   justify-content: center;
   flex-direction: column;
   color: #ffffff;
+
+  ${media.phone} {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const Text = styled.p`

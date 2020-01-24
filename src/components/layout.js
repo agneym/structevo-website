@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
+import media from "../components/media";
 import "./style.css";
 
 const Main = styled.main`
@@ -9,6 +10,10 @@ const Main = styled.main`
   align-items: center;
   min-height: 100vh;
   justify-content: space-around;
+
+  ${media.phone} {
+    flex-direction: column-reverse;
+  }
 `;
 
 const Layout = ({ children }) => {
