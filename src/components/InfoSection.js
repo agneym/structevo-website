@@ -7,11 +7,15 @@ const Logo = styled.img`
   height: 14rem;
 `;
 
+const Section = styled.section`
+  text-align: center;
+`;
+
 function InfoSection() {
   return (
-    <section>
+    <Section>
       <Logo src={logo} alt="Structevo logo" />
-    </section>
+    </Section>
   );
 }
 
