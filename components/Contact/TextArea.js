@@ -11,7 +11,7 @@ const Label = styled.label`
   font-size: 1.3rem;
 `;
 
-const InputEl = styled.input`
+const InputEl = styled.textarea`
   background-color: ${(props) => props.theme.colors.white};
   border: 0.1rem solid ${(props) => props.theme.colors.gray[400]};
   padding: 1rem 0.8rem;
@@ -26,7 +26,7 @@ const InputEl = styled.input`
   }
 `;
 
-function Input({ id, labelText, value, onChange, className, ...rest }) {
+function TextArea({ id, labelText, value, onChange, className, ...rest }) {
   const handleChange = (event) => {
     const {
       target: { value },
@@ -37,6 +37,7 @@ function Input({ id, labelText, value, onChange, className, ...rest }) {
     <Container className={className}>
       <Label htmlFor={id}>{labelText}</Label>
       <InputEl
+        rows={4}
         type="text"
         id={id}
         name={id}
@@ -48,4 +49,4 @@ function Input({ id, labelText, value, onChange, className, ...rest }) {
   );
 }
 
-export default Input;
+export default TextArea;

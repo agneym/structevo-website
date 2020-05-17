@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Input from "./Input";
+import TextArea from "./TextArea";
 
 function Form() {
   const [name, setName] = useState("");
@@ -38,7 +39,7 @@ function Form() {
         placeholder="Subject line"
         onChange={setSubject}
       />
-      <Input
+      <TextArea
         id="message"
         labelText="Message"
         value={message}
