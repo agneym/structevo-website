@@ -5,10 +5,11 @@ import NavLinks from "./NavLinks";
 
 const Nav = styled.nav`
   background-color: ${(props) => props.theme.colors.gray[900]};
-  padding: 1.2rem 4rem 0.5rem;
+  padding: 1.2rem 4rem;
   color: ${(props) => props.theme.colors.white};
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const Logo = styled.img`
