@@ -6,7 +6,7 @@ const NakedList = styled.ul`
   list-style: none;
 
   & > li::before {
-    content: "\200B";
+    content: "\\200B";
   }
 `;
 
