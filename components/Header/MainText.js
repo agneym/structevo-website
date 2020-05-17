@@ -26,12 +26,14 @@ const Subtitle = styled(motion.sub)`
 const CtaButton = styled(Button)`
   font-size: 1.8rem;
   text-transform: uppercase;
-  margin-top: 10rem;
+  margin-top: 2rem;
   padding: 1.4rem 3rem;
   letter-spacing: -0.05rem;
   font-family: ${(props) => props.theme.fonts.heading};
   font-weight: 200;
   background-color: ${(props) => props.theme.colors.green[500]};
+  border-radius: 0.4rem;
+  align-self: start;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.green[600]};
