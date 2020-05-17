@@ -14,7 +14,7 @@ export default class CustomApp extends App {
         <Head>
           <title>Structevo</title>
           <link
-            href="https://fonts.googleapis.com/css?family=Inter|Work+Sans:500&display=swap"
+            href="https://fonts.googleapis.com/css?family=Inter|Work+Sans:400,500&display=swap"
             rel="stylesheet"
           />
         </Head>

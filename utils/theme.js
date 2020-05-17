@@ -51,15 +51,15 @@ const colors = {
     900: "#744210",
   },
   green: {
-    100: "#f0fff4",
-    200: "#c6f6d5",
-    300: "#9ae6b4",
-    400: "#68d391",
-    500: "#48bb78",
-    600: "#38a169",
-    700: "#2f855a",
-    800: "#276749",
-    900: "#22543d",
+    100: "#E6F8EC",
+    200: "#C1EED0",
+    300: "#9BE3B3",
+    400: "#51CF7A",
+    500: "#06BA41",
+    600: "#05A73B",
+    700: "#047027",
+    800: "#03541D",
+    900: "#023814",
   },
   teal: {
     100: "#e6fffa",
@@ -118,7 +118,7 @@ const colors = {
   },
 };
 
-const boxShadows = {
+const shadows = {
   sm: "0 1px 2px 0 rgba(0, 0, 0, 0.04)",
   default: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
@@ -134,7 +134,7 @@ const boxShadows = {
 const theme = {
   fonts,
   colors,
-  boxShadows,
+  shadows,
 };
 
 export default theme;

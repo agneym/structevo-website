@@ -14,10 +14,11 @@ const Backdrop = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 `;
 
 const Image = styled.img`
@@ -27,7 +28,7 @@ const Image = styled.img`
 function Header() {
   return (
     <HeaderContainer>
-      <Image src="/carousel/placeholder.jpg" alt="Large house" load="lazy" />
+      <Image src="/carousel/placeholder.jpg" alt="Large house" loading="lazy" />
       <Backdrop>
         <MainText />
       </Backdrop>
