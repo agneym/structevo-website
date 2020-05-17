@@ -2,11 +2,13 @@ import React from "react";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 function IndexPage() {
   return (
     <>
       <Navbar />
+      <Header />
       <main>
         <h1>Landing Page</h1>
         <p>
