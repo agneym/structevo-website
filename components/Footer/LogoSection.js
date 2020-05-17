@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+const Container = styled.div`
+  padding-top: 2.5rem;
+`;
+
 const Image = styled.img`
   max-width: 100%;
   width: 20rem;
@@ -8,9 +12,9 @@ const Image = styled.img`
 
 function LogoSection() {
   return (
-    <div>
+    <Container>
       <Image src="/logo.png" alt="" />
-    </div>
+    </Container>
   );
 }
 

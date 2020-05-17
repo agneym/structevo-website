@@ -15,6 +15,7 @@ const ListItem = styled.li`
   padding: 0.3rem 0.6rem;
   font-size: 1.4rem;
   border: 0.1rem solid ${(props) => props.theme.colors.gray[700]};
+  border-radius: 0.5rem;
   cursor: default;
 
   &:hover {

@@ -4,9 +4,10 @@ import styled from "styled-components";
 import LogoSection from "./LogoSection";
 import LinksList from "./LinksList";
 import TagsList from "./TagsList";
+import ContactList from "./ContactList";
 
 const Container = styled.footer`
-  background-color: ${(props) => props.theme.colors.gray[700]};
+  background-color: ${(props) => props.theme.colors.gray[800]};
   padding: 3rem 0 2.5rem 0;
   color: ${(props) => props.theme.colors.gray[400]};
 `;
@@ -14,7 +15,8 @@ const Container = styled.footer`
 const Content = styled.div`
   margin: 0 6rem;
   display: grid;
-  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-template-columns: 50rem repeat(3, 1fr);
+  grid-gap: 4rem;
 `;
 
 const usefulLinks = [
@@ -56,6 +58,7 @@ function Footer() {
           heading="Services"
           tagsList={servicesList.map((service) => ({ text: service }))}
         />
+        <ContactList heading="Follow us" />
       </Content>
     </Container>
   );
