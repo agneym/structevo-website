@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 
 function IndexPage() {
   return (
@@ -10,6 +11,7 @@ function IndexPage() {
         aliquam, similique, accusantium molestiae sapiente officia eveniet
         asperiores autem?
       </p>
+      <Footer />
     </main>
   );
 }

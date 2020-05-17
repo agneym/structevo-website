@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from "next/document";
+import Document from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 export default class CustomDocument extends Document {
@@ -26,23 +26,5 @@ export default class CustomDocument extends Document {
     } finally {
       sheet.seal();
     }
-  }
-
-  render() {
-    return (
-      <html lang="en">
-        <Head>
-          <title>Structevo</title>
-          <link
-            href="https://fonts.googleapis.com/css?family=Inter|Work+Sans:500&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </html>
-    );
   }
 }
