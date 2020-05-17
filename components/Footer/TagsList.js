@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const List = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
+import NakedList from "../NakedList";
+
+const List = styled(NakedList)`
   display: flex;
   flex-wrap: wrap;
 `;

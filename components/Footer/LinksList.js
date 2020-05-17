@@ -2,17 +2,13 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
+import NakedList from "../NakedList";
+
 const Heading = styled.h5`
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
   margin-bottom: 1rem;
-`;
-
-const List = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
 `;
 
 const LinkContainer = styled.li`
@@ -31,7 +27,7 @@ function LinksList({ heading, links }) {
   return (
     <div>
       <Heading>{heading}</Heading>
-      <List>
+      <NakedList>
         {links.map((link) => (
           <LinkContainer>
             <Link key={link.text} href={link.href}>
@@ -39,7 +35,7 @@ function LinksList({ heading, links }) {
             </Link>
           </LinkContainer>
         ))}
-      </List>
+      </NakedList>
     </div>
   );
 }
