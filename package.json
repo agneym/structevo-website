@@ -1,0 +1,58 @@
+{
+  "name": "structevo-web",
+  "version": "1.0.0",
+  "author": "Agney <agney@outlook.in>",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "pretty": "prettier --write .",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "test": "jest"
+  },
+  "dependencies": {
+    "framer-motion": "^2.0.0-beta.71",
+    "next": "^9.4.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-feather": "^2.0.4",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.3",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.4.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.8.0",
+    "eslint": "^7.0.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "husky": ">=4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.4.0",
+    "lint-staged": ">=10",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1"
+  },
+  "private": true,
+  "license": "proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agneym/structevo-website.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
