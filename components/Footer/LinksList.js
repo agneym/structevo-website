@@ -34,7 +34,9 @@ function LinksList({ heading, links }) {
       <List>
         {links.map((link) => (
           <LinkContainer>
-            <Link href={link.href}>{link.text}</Link>
+            <Link key={link.text} href={link.href}>
+              {link.text}
+            </Link>
           </LinkContainer>
         ))}
       </List>
