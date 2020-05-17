@@ -4,9 +4,10 @@ import styled from "styled-components";
 import Form from "./Form";
 
 const Section = styled.section`
-  margin: 5rem 0 3.5rem;
+  margin: 5rem 0 0;
   background-color: ${(props) => props.theme.colors.gray[200]};
   overflow: auto;
+  padding-bottom: 3.5rem;
 `;
 
 const Content = styled.div`

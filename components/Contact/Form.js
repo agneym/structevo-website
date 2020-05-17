@@ -10,10 +10,23 @@ function Form() {
   const [] = useState("");
   return (
     <form>
-      <Input id="name" labelText="Name" value={name} onChange={setName} />
-      <Input id="email" labelText="Email" value={email} onChange={setEmail} />
+      <Input
+        id="name"
+        placeholder="John Doe"
+        labelText="Name"
+        value={name}
+        onChange={setName}
+      />
+      <Input
+        id="email"
+        placeholder="johndoe@email.com"
+        labelText="Email"
+        value={email}
+        onChange={setEmail}
+      />
       <Input
         id="mobile"
+        placeholder="10 Digit Mobile number"
         labelText="Mobile"
         value={mobile}
         onChange={setMobile}
@@ -22,12 +35,14 @@ function Form() {
         id="subject"
         labelText="Subject"
         value={subject}
+        placeholder="Subject line"
         onChange={setSubject}
       />
       <Input
         id="message"
         labelText="Message"
         value={message}
+        placeholder="Add your message here"
         onChange={setMessage}
       />
     </form>
