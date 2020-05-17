@@ -17,7 +17,6 @@ const InputEl = styled.input`
   padding: 1rem 0.8rem;
   border-radius: 0.5rem;
   width: 100%;
-  max-width: 35rem;
   font-family: ${(props) => props.theme.fonts.main};
   font-size: 1.4rem;
 

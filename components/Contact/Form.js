@@ -1,6 +1,20 @@
 import React, { useState } from "react";
+import styled from "styled-components";
+
 import Input from "./Input";
 import TextArea from "./TextArea";
+import Button from "../Button";
+
+const FormContainer = styled.form`
+  max-width: 35rem;
+`;
+
+const SendButton = styled(Button)`
+  display: block;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  padding: 1.2rem 1.4rem;
+`;
 
 function Form() {
   const [name, setName] = useState("");
@@ -10,7 +24,7 @@ function Form() {
   const [message, setMessage] = useState("");
   const [] = useState("");
   return (
-    <form>
+    <FormContainer>
       <Input
         id="name"
         placeholder="John Doe"
@@ -46,7 +60,8 @@ function Form() {
         placeholder="Add your message here"
         onChange={setMessage}
       />
-    </form>
+      <SendButton type="submit">Send Message</SendButton>
+    </FormContainer>
   );
 }
 

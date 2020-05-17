@@ -8,13 +8,14 @@ const colors = {
 
 const ButtonContainer = styled(motion.button)`
   appearance: none;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   color: ${(props) => props.theme.colors.white};
   background-color: ${(props) => props.theme.colors.black};
   border: none;
   box-shadow: ${(props) => props.theme.shadows.sm};
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.6rem;
   cursor: pointer;
+  border-radius: 0.5rem;
 
   &:hover {
     box-shadow: ${(props) => props.theme.shadows.sm};
