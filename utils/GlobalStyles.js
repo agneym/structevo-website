@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   
+  img {
+    max-width: 100%;
+  }
+  
   body {
     margin: 0;
     font-size: 1.6rem;

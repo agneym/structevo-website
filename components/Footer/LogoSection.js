@@ -13,7 +13,7 @@ const Image = styled.img`
 function LogoSection() {
   return (
     <Container>
-      <Image src="/logo.png" alt="" />
+      <Image src="/full-logo.png" alt="" />
     </Container>
   );
 }
