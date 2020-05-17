@@ -8,9 +8,9 @@ const GlobalStyle = createGlobalStyle`
   *, :after, :before {
     box-sizing: border-box;
   }
-  
-  img {
-    max-width: 100%;
+
+  html {
+    scroll-behavior: smooth;
   }
   
   body {
@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     font-family: ${(props) => props.theme.fonts.heading};
+  }
+
+  img {
+    max-width: 100%;
   }
 `;
 
