@@ -14,6 +14,8 @@ const Content = styled.div`
   position: absolute;
   background-color: ${(props) => props.theme.colors.gray[800]};
   right: -8rem;
+  top: 50%;
+  transform: translateY(-65%);
   width: 90%;
   box-shadow: ${(props) => props.theme.shadows.xl};
   color: ${(props) => props.theme.colors.green[100]};

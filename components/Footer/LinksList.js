@@ -29,9 +29,9 @@ function LinksList({ heading, links }) {
       <Heading>{heading}</Heading>
       <NakedList>
         {links.map((link) => (
-          <LinkContainer>
+          <LinkContainer key={link.text}>
             <Link key={link.text} href={link.href}>
-              {link.text}
+              <a>{link.text}</a>
             </Link>
           </LinkContainer>
         ))}

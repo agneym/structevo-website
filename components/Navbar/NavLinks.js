@@ -58,7 +58,7 @@ function NavLinks() {
     <List>
       {links.map((link) => {
         return (
-          <ListItem>
+          <ListItem key={link.text}>
             <Link href={link.href}>
               <a>{link.text}</a>
             </Link>
