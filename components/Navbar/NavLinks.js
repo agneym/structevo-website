@@ -22,7 +22,7 @@ const links = [
     text: "Projects",
   },
   {
-    href: "/contact",
+    href: "/#contact",
     text: "Contact",
   },
 ];
@@ -59,7 +59,9 @@ function NavLinks() {
       {links.map((link) => {
         return (
           <ListItem>
-            <Link href={link.href}>{link.text}</Link>
+            <Link href={link.href}>
+              <a>{link.text}</a>
+            </Link>
           </ListItem>
         );
       })}
