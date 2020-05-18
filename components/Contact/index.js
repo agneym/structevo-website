@@ -9,7 +9,6 @@ const Section = styled.section`
   background-color: ${(props) => props.theme.colors.gray[200]};
   overflow: auto;
   padding-bottom: 3.5rem;
-  display: flex;
 `;
 
 const Content = styled.div`
@@ -19,6 +18,7 @@ const Content = styled.div`
   background-color: ${(props) => props.theme.colors.white};
   box-shadow: ${(props) => props.theme.shadows.lg};
   border-radius: 0.5rem;
+  display: flex;
 `;
 
 const Subtitle = styled.p`

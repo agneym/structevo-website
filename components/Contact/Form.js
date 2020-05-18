@@ -6,7 +6,7 @@ import TextArea from "./TextArea";
 import Button from "../Button";
 
 const FormContainer = styled.form`
-  max-width: 35rem;
+  width: 100%;
 `;
 
 const SendButton = styled(Button)`
@@ -22,7 +22,7 @@ function Form() {
   const [mobile, setMobile] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [] = useState("");
+
   return (
     <FormContainer>
       <Input
