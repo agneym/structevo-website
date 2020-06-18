@@ -20,7 +20,7 @@ const Content = styled.div`
 
 const usefulLinks = [
   {
-    href: "",
+    href: "#about",
     text: "About us",
   },
   {

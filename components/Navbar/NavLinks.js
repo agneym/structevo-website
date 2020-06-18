@@ -10,7 +10,7 @@ const links = [
     text: "Home",
   },
   {
-    href: "/",
+    href: "/#about",
     text: "About",
   },
   {

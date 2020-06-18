@@ -22,7 +22,7 @@ const ImageContainer = styled.div`
 
 function Intro() {
   return (
-    <Section>
+    <Section id="about">
       <SectionTitle>About StructEvo</SectionTitle>
       <Container>
         <TextSection />
