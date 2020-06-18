@@ -7,7 +7,6 @@ import TagsList from "./TagsList";
 import ContactList from "./ContactList";
 
 const Container = styled.footer`
-  background-color: ${(props) => props.theme.colors.gray[800]};
   padding: 3rem 0 2.5rem 0;
   color: ${(props) => props.theme.colors.gray[400]};
 `;

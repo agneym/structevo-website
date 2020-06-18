@@ -8,6 +8,7 @@ const Container = styled.div`
 const Image = styled.img`
   max-width: 100%;
   width: 20rem;
+  height: auto;
 `;
 
 function LogoSection() {

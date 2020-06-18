@@ -13,12 +13,17 @@ const Heading = styled.h5`
 
 const LinkContainer = styled.li`
   margin: 0.4rem 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+
   a {
     text-decoration: none;
     color: ${(props) => props.theme.colors.gray[300]};
+    transition: color 0.2s ease-out;
 
     &:hover {
-      text-decoration: underline;
+      color: ${(props) => props.theme.colors.primary};
     }
   }
 `;

@@ -36,15 +36,17 @@ const ListItem = styled.li`
   text-transform: uppercase;
   font-size: 1.4rem;
   font-family: ${(props) => props.theme.fonts.heading};
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
   color: ${(props) => props.theme.colors.white};
+  transition: color 0.2s ease-out;
 
   &:first-child {
     margin-left: 0;
   }
 
   &:hover {
-    color: ${(props) => props.theme.colors.gray[400]};
+    color: ${(props) => props.theme.colors.primary};
   }
 
   a {
