@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 import SectionTitle from "../SectionTitle";
 import TextSection from "./TextSection";
+import SpecSection from "./SpecSection";
 
 const Section = styled.section`
-  margin: 8rem auto 10rem;
+  margin: 10rem auto 16rem;
   padding: 0 1rem;
 `;
 
@@ -25,6 +26,7 @@ function Intro() {
       <SectionTitle>About StructEvo</SectionTitle>
       <Container>
         <TextSection />
+        <SpecSection />
         <ImageContainer>
           <img src="/thing.jpg" alt="" />
         </ImageContainer>

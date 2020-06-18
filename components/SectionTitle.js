@@ -7,7 +7,7 @@ const Title = styled.h2`
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   letter-spacing: 0.9rem;
   margin-bottom: 10rem;
 `;
