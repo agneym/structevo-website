@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Form from "./Form";
 import Info from "./Info";
+import SectionTitle from "../SectionTitle";
 
 const Section = styled.section`
   margin: 8rem 0 0;
@@ -37,13 +38,7 @@ function Contact() {
               margin-bottom: 3rem;
             `}
           >
-            <h2
-              css={`
-                margin-bottom: 0.5rem;
-              `}
-            >
-              Get in Touch
-            </h2>
+            <SectionTitle>Get in Touch</SectionTitle>
             <Subtitle>
               Send us a message and we will respond as soon as possible
             </Subtitle>

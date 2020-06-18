@@ -1,24 +1,34 @@
 import React from "react";
 import styled from "styled-components";
 
-import FirstSection from "./FirstSection";
-import SecondSection from "./SecondSection";
+import SectionTitle from "../SectionTitle";
+import TextSection from "./TextSection";
 
 const Section = styled.section`
-  max-width: 1280px;
-  margin: 5rem auto;
+  margin: 8rem auto 10rem;
   padding: 0 1rem;
+`;
+
+const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 5rem 0;
+  grid-template-columns: repeat(5, 1fr);
+`;
+
+const ImageContainer = styled.div`
+  grid-column-start: 4;
+  box-shadow: ${(props) => props.theme.shadows.md};
 `;
 
 function Intro() {
   return (
     <Section>
-      <FirstSection />
-      <SecondSection />
+      <SectionTitle>About StructEvo</SectionTitle>
+      <Container>
+        <TextSection />
+        <ImageContainer>
+          <img src="/thing.jpg" alt="" />
+        </ImageContainer>
+      </Container>
     </Section>
   );
 }

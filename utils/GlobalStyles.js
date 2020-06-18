@@ -46,7 +46,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   img {
+    object-fit: cover;
     max-width: 100%;
+    height: 100%;
   }
 
   ${ScrollbarStyles}
