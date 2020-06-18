@@ -3,7 +3,7 @@ import styled from "styled-components";
 import MainText from "./MainText";
 
 const HeaderContainer = styled.header`
-  height: calc(100vh - 7rem - 4rem);
+  // height: calc(100vh - 7rem - 4rem);
   overflow-y: hidden;
   position: relative;
 `;
@@ -23,6 +23,8 @@ const Backdrop = styled.div`
 
 const Image = styled.img`
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 `;
 
 function Header() {

@@ -12,9 +12,9 @@ export default class CustomApp extends App {
     return (
       <>
         <Head>
-          <title>Structevo</title>
+          <title>Structevo - Architecture & Interior Design</title>
           <link
-            href="https://fonts.googleapis.com/css?family=Inter|Work+Sans:400,500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&display=swap"
             rel="stylesheet"
           />
         </Head>

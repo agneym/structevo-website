@@ -1,11 +1,13 @@
 const fonts = {
-  main: `"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif`,
-  heading: `'Work Sans', sans-serif`,
+  main: `'Montserrat', sans-serif`,
+  heading: `'Oswald', sans-serif`,
 };
 
 const colors = {
   black: `#000000`,
   white: `#ffffff`,
+  primary: "#c5a47e",
+
   gray: {
     100: "#f7fafc",
     200: "#edf2f7",

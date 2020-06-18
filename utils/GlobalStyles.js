@@ -1,4 +1,23 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
+
+const ScrollbarStyles = css`
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: ${(props) => props.theme.colors.primary}
+      ${(props) => props.theme.colors.gray[100]};
+  }
+
+  *::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  *::-webkit-scrollbar-track {
+    background: ${(props) => props.theme.colors.gray[200]};
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: ${(props) => props.theme.colors.primary};
+    border-radius: 0.2rem;
+  }
+`;
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -16,8 +35,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-size: 1.6rem;
-    line-height: 1.5;
-    color: ${(props) => props.theme.colors.gray[800]};
+    line-height: 1.6;
+    background-color: ${(props) => props.theme.colors.gray[800]};
+    color: ${(props) => props.theme.colors.gray[300]};
     font-family: ${(props) => props.theme.fonts.main};
   }
 
@@ -28,6 +48,8 @@ const GlobalStyle = createGlobalStyle`
   img {
     max-width: 100%;
   }
+
+  ${ScrollbarStyles}
 `;
 
 export default GlobalStyle;
