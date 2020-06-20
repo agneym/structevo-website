@@ -15,12 +15,13 @@ const InputEl = styled.textarea`
   background-color: ${(props) => props.theme.colors.gray[700]};
   color: ${(props) => props.theme.colors.white};
   border: 0.1rem solid ${(props) => props.theme.colors.gray[700]};
-  padding: 1.4rem 1rem;
+  padding: 1.8rem 1rem;
   border-radius: 1.2rem;
   width: 100%;
   font-family: ${(props) => props.theme.fonts.main};
   font-size: 1.6rem;
   transition: border-color 0.2s ease-out;
+  resize: none;
 
   &:focus {
     border-color: ${(props) => props.theme.colors.primary};

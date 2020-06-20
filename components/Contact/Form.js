@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { ArrowRight } from "react-feather";
 
 import Input from "./Input";
 import TextArea from "./TextArea";
@@ -19,9 +20,21 @@ const InputGrid = styled.div`
 
 const SendButton = styled(Button)`
   display: block;
-  margin: 1rem auto;
-  font-size: 1.5rem;
-  padding: 1.2rem 1.4rem;
+  margin-left: auto;
+  padding: 1.2rem 2rem;
+  box-shadow: ${(props) => props.theme.shadows.sm};
+  background-color: ${(props) => props.theme.colors.primary};
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    margin-left: 0.5rem;
+  }
 `;
 
 function Form() {
@@ -70,7 +83,10 @@ function Form() {
         placeholder="Add your message here"
         onChange={setMessage}
       />
-      <SendButton type="submit">Send Message</SendButton>
+      <SendButton type="submit">
+        <span>Send</span>
+        <ArrowRight size={18} />
+      </SendButton>
     </FormContainer>
   );
 }
