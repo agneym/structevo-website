@@ -20,6 +20,7 @@ function Contact() {
     <Section id="contact">
       <SectionTitle shadowText="Contact">Get in touch</SectionTitle>
       <Container>
+        <Info />
         <Form />
       </Container>
     </Section>

@@ -16,7 +16,7 @@ const InputEl = styled.input`
   background-color: ${(props) => props.theme.colors.gray[700]};
   color: ${(props) => props.theme.colors.white};
   border: 0.1rem solid ${(props) => props.theme.colors.gray[700]};
-  padding: 1.8rem 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 1.2rem;
   width: 100%;
   font-family: ${(props) => props.theme.fonts.main};

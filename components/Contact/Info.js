@@ -6,25 +6,10 @@ import NakedList from "../NakedList";
 import Social from "../Social";
 
 const Container = styled.div`
-  position: relative;
   flex: 1;
   grid-column-start: 2;
-`;
-
-const Content = styled.div`
-  position: absolute;
-  background-color: ${(props) => props.theme.colors.gray[800]};
-  right: -8rem;
-  top: 50%;
-  transform: translateY(-65%);
-  width: 90%;
-  box-shadow: ${(props) => props.theme.shadows.xl};
-  color: ${(props) => props.theme.colors.green[100]};
-  padding: 1.5rem 3rem;
-`;
-
-const Heading = styled.h2`
-  margin-bottom: 1rem;
+  color: ${(props) => props.theme.colors.gray[500]};
+  padding-right: 1rem;
 `;
 
 const ListItem = styled.li`
@@ -56,17 +41,14 @@ function InfoItem({ icon: Icon, children }) {
 function Info() {
   return (
     <Container>
-      <Content>
-        <Heading>Contact Us</Heading>
-        <NakedList>
-          <InfoItem icon={Mail}>structevo@gmail.com</InfoItem>
-          <InfoItem icon={Phone}>+91 934934674</InfoItem>
-          <InfoItem icon={Home}>
-            1600 Pennsylvania Avenue NW, Washington, D.C. 20500, U.S.
-          </InfoItem>
-        </NakedList>
-        <Social />
-      </Content>
+      <NakedList>
+        <InfoItem icon={Mail}>structevo@gmail.com</InfoItem>
+        <InfoItem icon={Phone}>+91 934934674</InfoItem>
+        <InfoItem icon={Home}>
+          1600 Pennsylvania Avenue NW, Washington, D.C. 20500, U.S.
+        </InfoItem>
+      </NakedList>
+      <Social />
     </Container>
   );
 }

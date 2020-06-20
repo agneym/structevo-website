@@ -16,9 +16,10 @@ const ListItem = styled.li`
   border: 0.1rem solid ${(props) => props.theme.colors.gray[700]};
   border-radius: 0.5rem;
   cursor: default;
+  transition: border-color 0.2s ease;
 
   &:hover {
-    border: 0.1rem solid ${(props) => props.theme.colors.gray[600]};
+    border-color: ${(props) => props.theme.colors.primary};
   }
 
   &:first-child {
