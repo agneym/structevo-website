@@ -14,6 +14,7 @@ function Contact() {
   return (
     <Section id="contact">
       <SectionTitle shadowText="Contact">Get in touch</SectionTitle>
+      <Form />
     </Section>
   );
 }
