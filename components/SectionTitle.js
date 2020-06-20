@@ -18,11 +18,13 @@ const Title = styled.h2`
     position: absolute;
     text-transform: capitalize;
     font-weight: 700;
-    opacity: 0.04;
-    font-size: 10rem;
+    opacity: 0.03;
+    font-size: 12rem;
     top: 4rem;
     left: 10%;
     letter-spacing: 0.1rem;
+    color: ${(props) => props.theme.colors.white};
+    z-index: -1;
   }
 `;
 
