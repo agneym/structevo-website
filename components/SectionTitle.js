@@ -10,12 +10,26 @@ const Title = styled.h2`
   font-size: 3.6rem;
   letter-spacing: 0.9rem;
   margin-bottom: 10rem;
+  position: relative;
+
+  &::after {
+    font-family: ${(props) => props.theme.fonts.main};
+    content: '${(props) => props.text}';
+    position: absolute;
+    text-transform: capitalize;
+    font-weight: 700;
+    opacity: 0.04;
+    font-size: 10rem;
+    top: 4rem;
+    left: 10%;
+    letter-spacing: 0.1rem;
+  }
 `;
 
 function SectionTitle({ children }) {
   const [first, ...rest] = children.split(" ");
   return (
-    <Title>
+    <Title text={first}>
       <span>{first} </span>
       <Emphasis>{rest.join(" ")}</Emphasis>
     </Title>
