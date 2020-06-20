@@ -10,11 +10,18 @@ const Section = styled.section`
   padding: 0 1rem;
 `;
 
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+`;
+
 function Contact() {
   return (
     <Section id="contact">
       <SectionTitle shadowText="Contact">Get in touch</SectionTitle>
-      <Form />
+      <Container>
+        <Form />
+      </Container>
     </Section>
   );
 }

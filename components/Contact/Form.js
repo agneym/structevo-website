@@ -7,6 +7,14 @@ import Button from "../Button";
 
 const FormContainer = styled.form`
   width: 100%;
+  grid-column-start: 3;
+  grid-column-end: 5;
+`;
+
+const InputGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 2rem;
 `;
 
 const SendButton = styled(Button)`
@@ -25,34 +33,36 @@ function Form() {
 
   return (
     <FormContainer>
-      <Input
-        id="name"
-        placeholder="John Doe"
-        labelText="Name"
-        value={name}
-        onChange={setName}
-      />
-      <Input
-        id="email"
-        placeholder="johndoe@email.com"
-        labelText="Email"
-        value={email}
-        onChange={setEmail}
-      />
-      <Input
-        id="mobile"
-        placeholder="10 Digit Mobile number"
-        labelText="Mobile"
-        value={mobile}
-        onChange={setMobile}
-      />
-      <Input
-        id="subject"
-        labelText="Subject"
-        value={subject}
-        placeholder="Subject line"
-        onChange={setSubject}
-      />
+      <InputGrid>
+        <Input
+          id="name"
+          placeholder="John Doe"
+          labelText="Name"
+          value={name}
+          onChange={setName}
+        />
+        <Input
+          id="email"
+          placeholder="johndoe@email.com"
+          labelText="Email"
+          value={email}
+          onChange={setEmail}
+        />
+        <Input
+          id="mobile"
+          placeholder="10 Digit Mobile number"
+          labelText="Mobile"
+          value={mobile}
+          onChange={setMobile}
+        />
+        <Input
+          id="subject"
+          labelText="Subject"
+          value={subject}
+          placeholder="Subject line"
+          onChange={setSubject}
+        />
+      </InputGrid>
       <TextArea
         id="message"
         labelText="Message"

@@ -8,6 +8,7 @@ import Social from "../Social";
 const Container = styled.div`
   position: relative;
   flex: 1;
+  grid-column-start: 2;
 `;
 
 const Content = styled.div`
