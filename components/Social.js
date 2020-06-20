@@ -21,6 +21,11 @@ const CustomLink = styled(motion.a)`
   text-decoration: none;
   display: inline-block;
   color: ${(props) => props.theme.colors.gray[300]};
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.primary};
+  }
 `;
 
 function Social() {

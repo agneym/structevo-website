@@ -32,7 +32,7 @@ const usefulLinks = [
     text: "Services",
   },
   {
-    href: "",
+    href: "/#contact",
     text: "Contact us",
   },
 ];
