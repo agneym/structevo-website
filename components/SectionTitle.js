@@ -28,10 +28,10 @@ const Title = styled.h2`
   }
 `;
 
-function SectionTitle({ children }) {
+function SectionTitle({ shadowText, children }) {
   const [first, ...rest] = children.split(" ");
   return (
-    <Title text={first}>
+    <Title text={shadowText ?? first}>
       <span>{first} </span>
       <Emphasis>{rest.join(" ")}</Emphasis>
     </Title>
