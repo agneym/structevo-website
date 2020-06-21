@@ -28,6 +28,10 @@ const usefulLinks = [
     text: "Projects",
   },
   {
+    href: "/#clients",
+    text: "Clients",
+  },
+  {
     href: "",
     text: "Services",
   },

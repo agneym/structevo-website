@@ -9,6 +9,7 @@ const Label = styled.label`
   display: block;
   margin-bottom: 0.3rem;
   font-size: 1.3rem;
+  color: ${(props) => props.theme.colors.gray[500]};
 `;
 
 const InputEl = styled.textarea`
