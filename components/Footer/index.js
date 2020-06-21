@@ -24,7 +24,7 @@ const usefulLinks = [
     text: "About us",
   },
   {
-    href: "",
+    href: "/#projects",
     text: "Projects",
   },
   {

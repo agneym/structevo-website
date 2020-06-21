@@ -3,6 +3,7 @@ import Head from "next/head";
 import React from "react";
 import { ThemeProvider } from "styled-components";
 
+import "@brainhubeu/react-carousel/lib/style.css";
 import GlobalStyle from "../utils/GlobalStyles";
 import theme from "../utils/theme";
 

@@ -30,7 +30,7 @@ const Image = styled.img`
 function Header() {
   return (
     <HeaderContainer>
-      <Image src="/carousel/placeholder.jpg" alt="Large house" loading="lazy" />
+      <Image src="/projects/placeholder.jpg" alt="Large house" loading="lazy" />
       <Backdrop>
         <MainText />
       </Backdrop>

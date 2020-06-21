@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Intro from "../components/Intro";
 import Contact from "../components/Contact";
 import Clients from "../components/Clients";
+import Projects from "../components/Projects";
 
 function IndexPage() {
   return (
@@ -14,6 +15,7 @@ function IndexPage() {
       <Header />
       <main>
         <Intro />
+        <Projects />
         <Clients />
         <Contact />
       </main>
